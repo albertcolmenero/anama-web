@@ -38,7 +38,13 @@ export default function Pillars() {
               >
                 <div className="flex items-start justify-between">
                   <span className="font-smallcaps text-[0.65rem] opacity-70">
-                    {item.symbol} · {item.glyph}
+                    {item.symbol}
+                  </span>
+                  <span
+                    aria-hidden
+                    className="text-[2.5rem] leading-none drop-shadow-sm"
+                  >
+                    {item.glyph}
                   </span>
                 </div>
 

@@ -17,11 +17,13 @@ export default function About() {
           >
             {about.title}
           </h2>
-          <div className="mt-10 space-y-6 max-w-xl text-clay/80 leading-relaxed">
+          <div className="mt-10 space-y-6 max-w-xl text-clay/80 leading-relaxed [&_strong]:font-medium [&_strong]:text-clay">
             {about.paragraphs.map((p, i) => (
-              <p key={i} className="text-lg">
-                {p}
-              </p>
+              <p
+                key={i}
+                className="text-lg"
+                dangerouslySetInnerHTML={{ __html: p }}
+              />
             ))}
           </div>
         </div>

@@ -41,29 +41,30 @@ export const nav = {
 
 export const hero = {
   eyebrow: "Pilates · Barré · Ritual",
-  titleStart: "Mueve con",
+  titleStart: "Muévete con",
   titleAccent: "intención",
   titleEnd: ".",
   subtitle:
-    "Un espacio de movimiento donde el cuerpo se trabaja con sentido. Fuerza, fluidez y regulación, allá donde estés.",
+    "Un espacio para moverte con intención. Fuerza, fluidez y estabilidad, estés donde estés.",
   primaryCta: { label: "Empieza tu práctica", href: "#unete" },
   secondaryCta: { label: "Conoce el método", href: "#metodo" },
   imageAlt: "Anna Sans, creadora de ANAMA, retrato sobre fondo rosado",
 } as const;
 
 export const manifesto = {
-  line: "No se trata de hacer más. Se trata de hacerlo con sentido.",
+  line: "No se trata de hacer más, sino de hacerlo con sentido.",
 } as const;
 
 export const about = {
   eyebrow: "Filosofía",
   title: "Un espacio para moverte con intención.",
   paragraphs: [
-    "ANAMA es un espacio de movimiento donde el cuerpo se trabaja con intención, sin perder la exigencia pero sin caer en la sobrecarga. Está pensado para que te sientas fuerte, ágil y conectada, entendiendo que no todos los días el cuerpo responde igual, y que eso también forma parte del proceso.",
-    "Las clases combinan control, fluidez y técnica. Hay momentos más activos, otros más precisos y otros más lentos, pero siempre con un objetivo claro: que el cuerpo trabaje bien y se sienta mejor después.",
+    "<strong>ANAMA</strong> es un espacio de movimiento donde el cuerpo se trabaja con intención. Sin perder la exigencia, pero sin caer en la sobrecarga.",
+    "Está pensado para que te sientas <strong>fuerte, ágil y conectada</strong>, entendiendo que no todos los días el cuerpo responde igual, y que eso también forma parte del proceso.",
+    "Las clases combinan <strong>control, fluidez y técnica</strong>. Hay momentos más activos, otros más precisos y otros más lentos, pero siempre con un objetivo claro: volver a sentirte bien en tu cuerpo.",
   ],
-  imageSrc: "/brand/photos/practice-2.jpg",
-  imageAlt: "Práctica de pilates en estudio con luz natural",
+  imageSrc: "/brand/photos/lifestyle-2.jpg",
+  imageAlt: "Movimiento consciente: editorial de práctica diaria",
 } as const;
 
 export const pillars = {
@@ -86,7 +87,7 @@ export const pillars = {
     {
       id: "barre",
       symbol: "02",
-      glyph: "🎀",
+      glyph: "🩰",
       name: "ANAMA Barré",
       logo: "/brand/logos/anama-studio.svg",
       illustration: "/brand/illustrations/ilus-c.svg",
@@ -118,7 +119,7 @@ export const anna = {
   ],
   pullquote: "Quiero que vuelvas a confiar en tu cuerpo.",
   signature: "— Anna",
-  imageSrc: "/brand/photos/anna-portrait.jpg",
+  imageSrc: "/brand/photos/anna-soy.jpg",
   imageAlt: "Anna Sans, fundadora de ANAMA Studio",
 } as const;
 
