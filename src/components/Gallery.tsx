@@ -18,32 +18,25 @@ export default function Gallery() {
           </h2>
         </div>
       </div>
-      <div className="mt-20 mx-auto max-w-[1500px] px-6 lg:px-12 grid grid-cols-2 lg:grid-cols-12 gap-3 lg:gap-4 auto-rows-[180px] lg:auto-rows-[240px]">
-        {gallery.images.map((img, i) => {
-          const layouts = [
-            "lg:col-span-5 lg:row-span-2",
-            "lg:col-span-3 lg:row-span-1",
-            "lg:col-span-4 lg:row-span-1",
-            "lg:col-span-3 lg:row-span-1",
-            "lg:col-span-4 lg:row-span-2",
-            "lg:col-span-5 lg:row-span-1",
-          ];
-          return (
+      <div className="mt-20 mx-auto max-w-[1500px] px-6 lg:px-12">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 lg:gap-6 [column-fill:_balance]">
+          {gallery.images.map((img) => (
             <figure
               key={img.src}
-              className={`relative overflow-hidden ${layouts[i % layouts.length]}`}
+              className="mb-4 lg:mb-6 break-inside-avoid overflow-hidden"
             >
               <Image
                 src={img.src}
                 alt={img.alt}
-                fill
-                sizes="(min-width: 1024px) 40vw, 50vw"
-                className="object-cover gallery-img"
+                width={img.width}
+                height={img.height}
+                sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                className="w-full h-auto block gallery-img"
                 loading="lazy"
               />
             </figure>
-          );
-        })}
+          ))}
+        </div>
       </div>
     </section>
   );

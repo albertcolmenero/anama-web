@@ -4,7 +4,7 @@ import { footer, site } from "@/lib/content";
 
 export default function Footer() {
   return (
-    <footer className="bg-clay text-cream/80 py-16">
+    <footer className="bg-clay text-cream/90 py-16">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex items-center gap-4">
           <Image
@@ -32,7 +32,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <p className="font-smallcaps text-[0.6rem] text-cream/50">
+        <p className="font-smallcaps text-[0.6rem] text-cream/75">
           {footer.copyright}
         </p>
       </div>

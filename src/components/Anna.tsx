@@ -45,7 +45,7 @@ export default function Anna() {
             <p className="font-script italic text-terracotta text-[clamp(1.5rem,3vw,2.5rem)] leading-tight">
               “{anna.pullquote}”
             </p>
-            <footer className="mt-4 font-smallcaps text-[0.7rem] text-clay/70">
+            <footer className="mt-4 font-smallcaps text-[0.7rem] text-clay/90">
               {anna.signature}
             </footer>
           </blockquote>

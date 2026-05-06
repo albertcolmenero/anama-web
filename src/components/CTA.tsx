@@ -26,7 +26,7 @@ export default function CTA() {
         className="absolute top-10 right-10 w-48 lg:w-64 opacity-20 invert brightness-200"
       />
       <div className="relative mx-auto max-w-[1100px] px-6 lg:px-12 text-center">
-        <p className="font-smallcaps text-[0.72rem] tracking-[0.32em] text-cream/80">
+        <p className="font-smallcaps text-[0.72rem] tracking-[0.32em] text-cream">
           {cta.eyebrow}
         </p>
         <h2

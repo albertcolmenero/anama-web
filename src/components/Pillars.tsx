@@ -37,7 +37,7 @@ export default function Pillars() {
                 className={`pillar-card relative overflow-hidden rounded-sm border ${tone.bg} ${tone.text} ${tone.border} p-8 lg:p-10 flex flex-col min-h-[480px]`}
               >
                 <div className="flex items-start justify-between">
-                  <span className="font-smallcaps text-[0.65rem] opacity-70">
+                  <span className="font-smallcaps text-[0.65rem] opacity-90">
                     {item.symbol}
                   </span>
                   <span
@@ -54,7 +54,7 @@ export default function Pillars() {
                   aria-hidden
                   width={140}
                   height={140}
-                  className={`pillar-illustration absolute -top-4 -right-6 w-44 opacity-25 ${
+                  className={`pillar-illustration absolute -top-4 -left-6 w-44 opacity-25 ${
                     idx === 2 ? "invert brightness-200" : ""
                   }`}
                 />
@@ -62,11 +62,11 @@ export default function Pillars() {
                 <h3 className="mt-14 font-serif text-[clamp(2.25rem,3.6vw,3.25rem)] leading-none tracking-tight">
                   {item.name.replace("ANAMA ", "")}
                 </h3>
-                <p className="mt-2 font-smallcaps text-[0.62rem] opacity-60">
+                <p className="mt-2 font-smallcaps text-[0.62rem] opacity-85">
                   ANAMA · {item.tags[0]}
                 </p>
 
-                <p className="mt-6 text-base leading-relaxed opacity-90 flex-1">
+                <p className="mt-6 text-base leading-relaxed opacity-100 flex-1">
                   {item.description}
                 </p>
 
@@ -74,7 +74,7 @@ export default function Pillars() {
                   {item.tags.map((t) => (
                     <li
                       key={t}
-                      className="font-smallcaps text-[0.6rem] px-3 py-1.5 rounded-full border border-current/40 opacity-80"
+                      className="font-smallcaps text-[0.6rem] px-3 py-1.5 rounded-full border border-current/60 opacity-100"
                     >
                       {t}
                     </li>
