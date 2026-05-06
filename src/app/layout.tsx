@@ -61,7 +61,11 @@ export const metadata: Metadata = {
     images: [seo.ogImage],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   category: "health",
 };
 
