@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { pillars } from "@/lib/content";
 
 const cardTones = [
@@ -47,17 +46,6 @@ export default function Pillars() {
                     {item.glyph}
                   </span>
                 </div>
-
-                <Image
-                  src={item.illustration}
-                  alt=""
-                  aria-hidden
-                  width={140}
-                  height={140}
-                  className={`pillar-illustration absolute -top-4 -left-6 w-44 opacity-25 ${
-                    idx === 2 ? "invert brightness-200" : ""
-                  }`}
-                />
 
                 <h3 className="mt-14 font-serif text-[clamp(2.25rem,3.6vw,3.25rem)] leading-none tracking-tight">
                   {item.name.replace("ANAMA ", "")}

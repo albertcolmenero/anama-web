@@ -6,8 +6,8 @@ export const site = {
   name: "ANAMA",
   brand: "ANAMA · Pilates Studio",
   founder: "Anna Sans",
-  instagram: "https://www.instagram.com/anama.studio",
-  email: "hola@anama.studio",
+  instagram: "https://www.instagram.com/anamapilates/",
+  email: "",
   locale: "es_ES",
   lang: "es",
 } as const;
@@ -179,8 +179,8 @@ export const footer = {
   tagline: "Movimiento con intención.",
   copyright: `© ${new Date().getFullYear()} ANAMA Studio · Anna Sans`,
   links: [
-    { label: "Instagram", href: "https://www.instagram.com/anama.studio" },
-    { label: "Email", href: "mailto:hola@anama.studio" },
+    { label: "Instagram", href: "https://www.instagram.com/anamapilates/" },
+    { label: "Email", href: "" },
   ],
 } as const;
 
