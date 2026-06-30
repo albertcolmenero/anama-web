@@ -8,6 +8,7 @@ export const site = {
   founder: "Anna Sans",
   instagram: "https://www.instagram.com/anamapilates/",
   email: "hello@anamamovement.com",
+  studioUrl: "https://studio.anamamovement.com/",
   locale: "es_ES",
   lang: "es",
 } as const;
@@ -36,7 +37,7 @@ export const nav = {
     { label: "Anna", href: "#anna" },
     { label: "Únete", href: "#unete" },
   ],
-  cta: { label: "Empieza", href: "#unete" },
+  cta: { label: "Empieza", href: site.studioUrl },
 } as const;
 
 export const hero = {
@@ -171,7 +172,7 @@ export const cta = {
   eyebrow: "Únete",
   title: "Empieza tu práctica.",
   body: "Bienvenida a un espacio donde la exigencia convive con el cuidado. Reconecta, mueve y respira.",
-  primary: { label: "Comienza ahora", href: "#" },
+  primary: { label: "Comienza ahora", href: site.studioUrl },
   secondary: { label: "Escríbeme", href: `mailto:${site.email}` },
 } as const;
 
