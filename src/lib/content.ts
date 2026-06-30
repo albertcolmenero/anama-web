@@ -7,7 +7,7 @@ export const site = {
   brand: "ANAMA · Pilates Studio",
   founder: "Anna Sans",
   instagram: "https://www.instagram.com/anamapilates/",
-  email: "",
+  email: "hello@anamamovement.com",
   locale: "es_ES",
   lang: "es",
 } as const;
@@ -172,7 +172,7 @@ export const cta = {
   title: "Empieza tu práctica.",
   body: "Bienvenida a un espacio donde la exigencia convive con el cuidado. Reconecta, mueve y respira.",
   primary: { label: "Comienza ahora", href: "#" },
-  secondary: { label: "Escríbeme", href: "mailto:hola@anama.studio" },
+  secondary: { label: "Escríbeme", href: `mailto:${site.email}` },
 } as const;
 
 export const footer = {
@@ -180,7 +180,7 @@ export const footer = {
   copyright: `© ${new Date().getFullYear()} ANAMA Studio · Anna Sans`,
   links: [
     { label: "Instagram", href: "https://www.instagram.com/anamapilates/" },
-    { label: "Email", href: "" },
+    { label: "Email", href: `mailto:${site.email}` },
   ],
 } as const;
 
